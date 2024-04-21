@@ -1,0 +1,100 @@
+        /* Resetting default margin and padding for all elements */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Styling for the navigation menu */
+        .navbar {
+            background-color: white; /* Off-shade of white */
+            color: black; /* Text color for links */
+            padding: 20px 20px; /* Increased padding for a larger navbar */
+            border-bottom: 2px solid #ccc; /* Grey line separating navbar from content */
+            display: flex; /* Flexbox layout for alignment */
+            justify-content: space-evenly; /* Space between elements */
+        }
+        
+        /* Style for the fancy font in the navigation menu */
+        .navbar-title {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Fancy font family */
+            font-size: normal; /* Adjust the font size as needed */
+            cursor: pointer
+        }
+        .navbar-login {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Fancy font family */
+            font-size: normal; /* Adjust the font size as needed */
+            cursor: pointer
+        }
+        .navbar-login {
+            position: center
+        }
+        
+        /* Dropdown container */
+        .dropdown {
+            position: relative;
+        }
+        
+        /* Dropdown content */
+        .dropdown-tests {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-tests {
+            top: 87.5%;
+            left: 50px;
+        }
+        
+        /* Show dropdown content on hover */
+        .dropdown:hover .dropdown-tests {
+            display: block;
+        }
+        
+        /* Style for dropdown links */
+        .dropdown-tests a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        /* Style for dropdown links on hover */
+        .dropdown-tests a:hover {
+            background-color: #f5f5f5;
+        }
+        
+        /* Dropdown content */ 
+        
+        .dropdown-signin {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-signin {
+            top: 87.5%;
+            left: 50px;
+        }
+        
+        /* Show dropdown content on hover */
+        .dropdown:hover .dropdown-signin {
+            display: block;
+        }
+        
+        /* Style for dropdown links */
+        .dropdown-signin a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        /* Style for dropdown links on hover */
+        .dropdown-signin a:hover {
+            background-color: #f5f5f5;
+        }

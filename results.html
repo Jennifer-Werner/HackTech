@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="results.css"> 
+    <link rel="stylesheet" href="top-bar.css">
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .result-container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .result-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .result {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <span class="navbar-title"><a href="index.html">Project GR.A.CE</a></span>
+        
+        <div class="dropdown">
+            <span class="navbar-title"><a href="#">Specialized Tests</a></span>
+            <div class="dropdown-tests">
+                <a href="#">Breast Cancer Risk</a>
+                <a href="#">Mental Health</a>
+                <a href="#">Meningitis</a>
+                <!-- Add more links as needed -->
+            </div>
+        </div>
+        <div class="dropdown">
+            <span class="navbar-title"><a href="#">Login/Signup</a></span>
+            <div class="dropdown-signin">
+                <a href="#">Log In</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <span class="navbar-title"><a href="portfolio.html">Personal Results</a></span>
+            <div class="dropdown-tests">
+                <a href="#">Medical wellbeing</a>
+            </div>
+        </div>
+    <div class="result-container">
+        <h1 class="result-title">Analysis Results</h1>
+        <div class="result">
+            {% for idx, result in enumerate(results) %}
+                <p>Patient {{ idx + 1 }}: {{ result }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

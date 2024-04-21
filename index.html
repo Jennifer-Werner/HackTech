@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project GR.A.CE</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat&display=swap">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="top-bar.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation menu -->
+    <div class="navbar">
+        <span class="navbar-title"><a href="index.html">Project GR.A.CE</a></span>
+        
+        <div class="dropdown">
+            <span class="navbar-title"><a href="#">Specialized Tests</a></span>
+            <div class="dropdown-tests">
+                <a href="cancer_test.html">Breast Cancer Risk</a>
+                <a href="#">Mental Health</a>
+                <a href="#">Meningitis</a>
+                <!-- Add more links as needed -->
+            </div>
+        </div>
+        <div class="dropdown">
+            <span class="navbar-title"><a href="login.html">Login/Signup</a></span>
+            <div class="dropdown-signin">
+                <a href="#">Log In</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <span class="navbar-title"><a href="portfolio.html">Personal Results</a></span>
+            <div class="dropdown-tests">
+                <a href="#">Medical wellbeing</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Content area -->
+    <div class="container">
+        <h1 class="title">Free AI Medical Examination</h1>
+        <div class="instruction-boxes">
+          <div class="instruction-box">
+            <img src="image1.jpg" alt="Step 1 Image">
+            <h2>Step 1: Enter Your Medical Information</h2>
+            <p>Fill out the required fields with accurate information about your medical history, symptoms, and any other relevant details.</p>
+          </div>
+          <div class="instruction-box">
+            <img src="image2.jpg" alt="Step 2 Image">
+            <h2>Step 2: Upload Relevant Documents</h2>
+            <p>Upload any medical reports, images, or documents that can help the AI system understand your case better.</p>
+          </div>
+          <div class="instruction-box">
+            <img src="image3.jpg" alt="Step 3 Image">
+            <h2>Step 3: Receive AI Analysis and Recommendations</h2>
+            <p>After submitting your information and documents, you will receive an AI-generated analysis of your condition along with personalized recommendations.</p>
+          </div>
+        </div>
+        <div class="white-space"></div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/universal-sentence-encoder"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@huggingface/model-card"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@huggingface/chatGPT"></script>
+      <div id="chatbot"></div>
+      <script>
+          const chatGPT = new ChatGPT({
+              modelCard: 'microsoft/BioGPT',
+              title: 'BioGPT Chatbot',
+              subtitle: 'Ask me anything about biology!',
+              botAvatarUrl: 'https://avatars.dicebear.com/api/bottts/biobot.svg'
+          });
+  
+          chatGPT.mount(document.getElementById('chatbot'));
+      </script>
+</body>
+</html>
+
+</body>
+</html>
